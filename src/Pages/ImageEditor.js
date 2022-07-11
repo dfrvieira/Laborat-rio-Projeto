@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import ImageUploading from "react-images-uploading";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import '../styles/ImageEditor.css'
 import { useNavigate } from "react-router-dom"
-//import * as CropperImage from "../Components/CropperImage.js"
-//import * as getCroppedImg from "../Components/crop/Crop.js"
-import { saveAs } from 'file-saver'
 
 /* ----------- ROTATE -----------*/
 
@@ -152,7 +149,7 @@ function ImageEditor() {
                     const url = window.URL.createObjectURL(new Blob([buffer]));
                     const link = document.createElement("a");
                     link.href = url;
-                    link.setAttribute("download", "image.png"); //or any other extension
+                    link.setAttribute("download", "image.png"); 
                     document.body.appendChild(link);
                     link.click();
                 });

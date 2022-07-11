@@ -1,5 +1,5 @@
 import { useOnDraw } from '../Components/Hooks'
-//import { Stage, Layer, Line } from "react-konva"
+
 
 const Canvas = ({
     width,
